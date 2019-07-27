@@ -1,0 +1,123 @@
+h1,h2,h3,h4,h5,h6,{
+    color: #2fa55e;
+}
+
+a:hover{text-decoration: none;}
+
+body {
+    color: #565;
+    line-height: 1.7;
+    font-size: 15px;
+}
+.section-heading {
+    margin-bottom: 80px;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+html, body {
+  font-size: 20px;
+  line-height: 30px;
+  color: grey;
+  height: 100%;
+}
+
+
+h1,h2,h3,h4,h5,h6,{
+    color: #2fa55e;
+}
+
+body a , html a {
+    text-decoration: none;
+}
+
+body {
+    color: #565;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.section-heading {
+    margin-bottom: 80px;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+html, body {
+  font-size: 20px;
+  line-height: 30px;
+  color: grey;
+  height: 100%;
+}
+.section-padding {
+    padding: 60px 0px;
+}
+
+/*
+main css
+*/
+.bg1{background-image: url(../img/hd/image1.jpeg);}
+.bg2{background-image: url(../img/hd/image2.jpeg);}
+.bg3{background-image: url(../img/hd/image3.jpeg);}
+.bg4{background-image: url(../img/hd/image4.jpeg);}
+.bg5{background-image: url(../img/hd/image5.jpeg);}
+.bg6{background-image: url(../img/hd/image6.jpeg);}
+
+.single-box-bg {
+  background-size: cover;
+  background-position: center;
+  background-color: powderblue;
+  height: 200px;
+  width: 100%;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+.single-box-item {
+  position: relative;
+  z-index: 1;
+}
+.box-hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  padding: 20px 0px;
+}
+.boxed-btn {
+  border: 1px solid blue;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.single-box-item:hover .box-hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.single-box-bg::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: black;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.single-box-item:hover .single-box-bg::after {
+  opacity: 0.7;
+  visibility: visible;
+}
+.single-box-item:hover .single-box-bg{
+  transform: scale(1.1);
+}
